@@ -21,11 +21,21 @@ const app: Application = express();
 // Security middleware
 app.use(helmet());
 app.use(cors({
-  origin: [
-    process.env.FRONTEND_URL || 'http://localhost:3000',
-    'https://pattern-iq-three.vercel.app',
-    'https://patterniq-frontend.vercel.app'
-  ],
+  origin: function (origin, callback) {
+    // Allow requests with no origin (like mobile apps, curl, etc.)
+    if (!origin) return callback(null, true);
+    
+    // Allow localhost for development
+    if (origin.includes('localhost')) return callback(null, true);
+    
+    // Allow all Vercel URLs (both production and preview deployments)
+    if (origin.includes('.vercel.app')) return callback(null, true);
+    
+    // Allow specific frontend URL from environment
+    if (origin === process.env.FRONTEND_URL) return callback(null, true);
+    
+    callback(new Error('Not allowed by CORS'));
+  },
   credentials: true
 }));
 
