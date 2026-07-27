@@ -45,3 +45,6 @@ Thumbs.db
 
 # MongoDB
 mongodb_data/
+
+# Deployment
+DEPLOYMENT.md

@@ -115,34 +115,34 @@ PatternIQ follows a modern full-stack architecture with clear separation between
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                     🎨 Frontend (Next.js)                    │
+│                     🎨 Frontend (Next.js)                   │
 │  ⚛️  React Components with TypeScript                       │
 │  🗃️  State Management with Zustand                          │
-│  🎨  Beautiful UI with TailwindCSS & shadcn/ui               │
-│  📊  Data Visualization with Recharts                        │
+│  🎨  Beautiful UI with TailwindCSS & shadcn/ui              │
+│  📊  Data Visualization with Recharts                       │
 └────────────────────┬────────────────────────────────────────┘
                      │ 🔗 HTTP/REST API
                      ▼
 ┌─────────────────────────────────────────────────────────────┐
-│                   ⚙️  Backend (Express.js)                   │
-│  🔌 REST API with TypeScript                                 │
-│  🔐 JWT Authentication Middleware                            │
-│  ✅ Request Validation & Error Handling                       │
+│                   ⚙️  Backend (Express.js)                  │
+│  🔌 REST API with TypeScript                                │
+│  🔐 JWT Authentication Middleware                           │
+│  ✅ Request Validation & Error Handling                     │
 │  🛡️  Rate Limiting & Security Headers                       │
 └────────────────────┬────────────────────────────────────────┘
                      │ 🗄️  Mongoose ODM
                      ▼
 ┌─────────────────────────────────────────────────────────────┐
-│                    🗄️  MongoDB Database                      │
-│  👤 Users, 📋 Tasks, 💭 Reflections, ⏱️  ScreenTime          │
-│  🤖 AIAnalysis, 📈 FortnightlyInsights, 📊 DailyMetrics      │
-│  ⚡ Indexed for optimal query performance                    │
+│                    🗄️  MongoDB Database                     │
+│  👤 Users, 📋 Tasks, 💭 Reflections, ⏱️  ScreenTime        │
+│  🤖 AIAnalysis, 📈 FortnightlyInsights, 📊 DailyMetrics    │
+│  ⚡ Indexed for optimal query performance                   │
 └────────────────────┬────────────────────────────────────────┘
                      │ 🤖 Groq SDK
                      ▼
 ┌─────────────────────────────────────────────────────────────┐
 │                   🧠 Groq AI Service                        │
-│  🦙 Llama 3.3 70B Model                                      │
+│  🦙 Llama 3.3 70B Model                                     │
 │  🔍 Behavioral Pattern Analysis                             │
 │  💡 Personalized Recommendations                            │
 └─────────────────────────────────────────────────────────────┘
