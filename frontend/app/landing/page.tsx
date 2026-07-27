@@ -509,4 +509,3 @@ export default function LandingPage() {
     </div>
   );
 }
-6
