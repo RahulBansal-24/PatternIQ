@@ -501,7 +501,7 @@ export default function LandingPage() {
               <span className="font-bold text-2xl gradient-text">PatternIQ</span>
             </motion.div>
             <p className="text-muted-foreground">
-              © 2024 PatternIQ. All rights reserved.
+              © 2026 PatternIQ. All rights reserved.
             </p>
           </div>
         </div>
